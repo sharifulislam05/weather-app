@@ -10,7 +10,8 @@ async function loadData(city) {
         showTemp(data)
     }
     catch(err) {
-        alert("city is not found, please enter correct city name")
+        alert("city is not found, please enter correct city name");
+        document.querySelector(".input-city").value = ""
     }
 }
 function showTemp(result) {
